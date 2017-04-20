@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.wldev.tttest.SecondFragment"
+    android:background="#000"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:fillViewport="true">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:transitionName="card">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:transitionName="image"
+                    android:id="@+id/image"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                    android:id="@+id/title"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:transitionName="main"
+                    android:paddingTop="16dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/descr"
+                    android:ellipsize="end"
+                    android:padding="18dp"
+                    android:transitionName="descr"
+                    android:textColor="#000"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:transitionName="image"
+                    android:id="@+id/image2"
+                    android:src="@drawable/img3"
+                    android:padding="16dp"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+
+</FrameLayout>
