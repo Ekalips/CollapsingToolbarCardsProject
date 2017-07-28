@@ -7,7 +7,7 @@ jobs:
   build:
     general:
       artifacts:
-          - app/build/reports
+          - app/build/outputs/
     working_directory: ~/code
     docker:
       - image: circleci/android:api-25-alpha
@@ -28,7 +28,7 @@ jobs:
           name: Build
           command: ./gradlew assembleDebug
       - store_artifacts:
-          path: app/build/reports
+          path: app/build/outputs/
           destination: reports
       - store_test_results:
           path: app/build/test-results
