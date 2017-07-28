@@ -5,7 +5,7 @@
 version: 2
 jobs:
   build:
-  general:
+    general:
       artifacts:
           - /home/ubuntu/test-android/app/build/outputs/apk/
     working_directory: ~/code
