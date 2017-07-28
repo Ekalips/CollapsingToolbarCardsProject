@@ -7,7 +7,7 @@ jobs:
   build:
     general:
       artifacts:
-          - /home/ubuntu/test-android/app/build/outputs/apk/
+          - app/build/reports
     working_directory: ~/code
     docker:
       - image: circleci/android:api-25-alpha
