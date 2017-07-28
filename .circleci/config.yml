@@ -24,7 +24,7 @@ jobs:
           paths:
             - ~/.gradle
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
-      test:
+      - test:
         override:
         - ./gradlew assembleDebug
       - store_artifacts:
